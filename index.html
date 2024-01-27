@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e595baa5d5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#cotact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Rohan</span> <br>Sardeshmukh</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/rohan_bg.webp" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quis voluptas reprehenderit, perspiciatis, porro, vitae ea repudiandae eaque officiis hic ut! Modi est nobis eveniet odio illo, delectus dolorem quasi! Minus officia, sequi quos ducimus ratione voluptatem quidem labore aut! Repellat eum quos ducimus voluptate fugit qui, iusto voluptatem minus!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-container active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages :</span><br> Java, C++, JavaScript</li>
+                            <li><span>Frontend :</span> <br>Html, CSS, BootStrap,Thymeleaf, ReactJs</li>
+                            <li><span>Backend : </span><br>Spring, SpringBoot, Django, MySQL, TestNG</li>
+                            <li><span>Fundamentals :</span><br> Data Structures, DBMS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-container" id="experience">
+                        <ul>
+                            <li><span>OneXtel Media : (17-07-23 to 31-01-2024)</span> </li>
+                            <li>
+                                <p>
+                                    Specialize in bulk SMS services and have gained basic experience in Erlang and Nitrogen framework through extensive training. This knowledge allowed me to optimize the functionality of bulk SMS systems, contributing to a robust backend infrastructure. Additionally, I have showcased my versatility in both backend and frontend development by designing and enhancing user interfaces using HTML, CSS and JavaScript.
+                                </p>
+                            </li>
+    
+                        </ul>
+                        <ul>
+                            <li><span>Persistent Systems : (23-06-22 to 28-02-2023)</span> </li>
+                            </li>
+                            <li><p>
+                                As a Software Engineer, I utilized Java and Java JDBC to effectively contribute to an internal project by applying my acquired knowledge and skills. Through practical learning, I successfully developed and improved software solutions. I also gained experience in working with Spring Framework and Spring Boot Framework during my involvement in the Task Tag project, leveraging my learned skills in these frameworks. Furthermore, I achieved a certification as an Amazon Web Services (AWS) Cloud for Beginners, enhancing my expertise in cloud computing.
+                            </p></li>      
+                        </ul>
+                    </div>
+                    <div class="tab-container" id="education">
+                       <ul>
+                        <li>
+                            <span>2018 - 2022</span><br>B-Tech - Walchand Institute of Technology 
+                        <li><br>
+                            <span>2018</span><br>A.D.Joshi Junior College
+                        </li><br>
+                        <li>
+                            <span>2016</span><br>Indian Model School
+                        </li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services tab -->
+    <div id="service">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-address-book" style="color: #FFD43B;"></i>
+                    <h2>Smart Contact Manager</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum assumenda asperiores earum porro libero fugiat iusto facilis ducimus voluptatibus. Voluptatem, laborum sunt. Provident rem perspiciatis mollitia ab suscipit. Ad?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-image" style="color: #FFD43B;"></i>
+                    <h2>Image Captioning</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum assumenda asperiores earum porro libero fugiat iusto facilis ducimus voluptatibus. Voluptatem, laborum sunt. Provident rem perspiciatis mollitia ab suscipit. Ad?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-react" style="color: #FFD43B;"></i>
+                    <h2>To Do List</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum assumenda asperiores earum porro libero fugiat iusto facilis ducimus voluptatibus. Voluptatem, laborum sunt. Provident rem perspiciatis mollitia ab suscipit. Ad?</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfoloio -->
+    <div id="portfolio">
+        <div class="container"></div>
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" >
+                <div class="layer">
+                    <h3>Social Media</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ipsum.</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square fa-lg" style="color: #dd2c2c;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Social Media</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ipsum.</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square fa-lg" style="color: #dd2c2c;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Social Media</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ipsum.</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square fa-lg" style="color: #dd2c2c;"></i></a>
+                </div>
+            </div>  
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+    <!-- Contact me -->
+    <div id="cotact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>  rohansardeshmukh44@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 7263900855</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rohan-sardeshmukh-4b2464208" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/RohanSardeshmukh.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="text" name="Email" placeholder="Your email" required>
+                        <textarea name="Messgae" rows="6" placeholder="Your messgae"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copywrite">
+            <p>copywrite &copy Rohan.<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
